@@ -11,10 +11,12 @@ Desenvolvido para auxiliar a integração de formulários, links, banners e outr
 ###### Scrip para definição de campanha para Materiais Educativos Gratuitos
 Crie uma nova página e Selecione o template **Material**.
 
-![This is an image](https://blog.huggy.io/assets/images/template-material.png)
+![Template Material](https://blog.huggy.io/assets/images/template-material.png)
+
 No corpo do texto, inserira um campo do tipo HTML e cole o código abaixo alterando as variáveis **{URL_ENDPOINT}** e **{ID_CAMPANHA}**. _Manter as aspas(") no inicio e final_
 
-![This is an image](https://blog.huggy.io/assets/images/campo-html.png)
+![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
+
 ```
 <script>
     var endpoint = "{URL_ENDPOINT}";
@@ -32,6 +34,9 @@ Basta selecionar a imagem ou texto adicionar um Link e no campo adicionar o cód
 ### POPUP Modal
 ###### Adicionando um popup para exibição
 Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{LINK_BANNER}** e **{URL_BANNER}**. _Manter as aspas(") no inicio e final_
+
+![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
+
 ```
 <script>
     var modalShow = 5000; // Exibi o modal após 5 segundos
