@@ -10,8 +10,10 @@ Desenvolvido para auxiliar a integração de formulários, links, banners e outr
 ### Materiais Gratuitos
 ###### Scrip para definição de campanha para Materiais Educativos Gratuitos
 Crie uma nova página e Selecione o template **Material**.
+
 ![This is an image](https://blog.huggy.io/assets/images/template-material.png)
 No corpo do texto, inserira um campo do tipo HTML e cole o código abaixo alterando as variáveis **{URL_ENDPOINT}** e **{ID_CAMPANHA}**. _Manter as aspas(") no inicio e final_
+
 ![This is an image](https://blog.huggy.io/assets/images/campo-html.png)
 ```
 <script>
