@@ -4,7 +4,7 @@ Desenvolvido para auxiliar a integração de formulários, links, banners e outr
 ## Itens
 
 - [Materiais Gratuitos](#materiais-gratuitos)
-- [Formulário para posts de Materiais Gratuitos](#formulario-para-posts-de-materiais-gratuitos)
+- [Formulário para posts de Materiais Gratuitos](#formulário-para-posts-de-materiais-gratuitos)
 - [Gatilho](#gatilho)
 - [POPUP Modal](#popup-modal)
 
@@ -29,7 +29,7 @@ No corpo do texto, inserira um campo do tipo HTML e cole o código abaixo altera
 
 ### Formulário para posts de Materiais Gratuitos
 ###### Adicionando formulário em post
-Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{LINK_BANNER}** e **{URL_BANNER}**. _Manter as aspas(") no inicio e final_
+Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{URL_ENDPOINT}**, **{ID_CAMPANHA}**, **{URL_PAGINA_OBRIGADO}**, **{TITULO_BOX}**, **{DESCRICAO_box}** e  **{URL_IMAGEM}**. _Manter as aspas(") no inicio e final_
 
 ![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
 
@@ -37,7 +37,8 @@ Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as var
     <script>
         var endpoint = "{URL_ENDPOINT}";
         var id_campanha = "{ID_CAMPANHA}";
-        var tituloBox = "{TITULO_BOX}"; // Exibi o modal após 5 segundos
+        var url = "{URL_PAGINA_OBRIGADO}";
+        var tituloBox = "{TITULO_BOX}";
         var descricaoBox = "{DESCRICAO_box}";
         var imagemBox = "{URL_IMAGEM}";
     </script>
