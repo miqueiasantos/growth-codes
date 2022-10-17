@@ -62,14 +62,18 @@ Basta selecionar a imagem ou texto adicionar um Link e no campo adicionar o cód
 
 Insira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{ID_DO_GATILHO}** e **{URL_DA_IMAGEM}**. _Manter as aspas(") no inicio e final_
 
-````<div onclick="javascript:Huggy.startTrigger('{ID_DO_GATILHO}')"
+```
+<div onclick="javascript:Huggy.startTrigger('{ID_DO_GATILHO}')"
           style="cursor:pointer">
 	<img src="{URL_DA_IMAGEM}"
      alt="" style = "display: block; margin-left: auto; margin-right: auto; width: 100%;" border="0"/>
-</div>```
+</div>
+```
 
 ### POPUP Modal
+
 ###### Adicionando um popup para exibição
+
 Insira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{LINK_BANNER}** e **{URL_BANNER}**. _Manter as aspas(") no inicio e final_
 
 ![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
@@ -84,4 +88,3 @@ Insira um campo do tipo HTML no texto e cole o código abaixo alterando as vari�
 <div id="modal-show"> <div> <a href="javascript:;" onclick="document.getElementById('modal-show').style.display='none';" class="close"></a> <a href="" id="modalLinkEl" target="_blank" class="button"></a> <img src="" id="modalImagemEl" alt=""/> </div></div>
 <script>modalShow&&modalImagem&&(setTimeout(function(){document.getElementById("modal-show").style.display="flex"},modalShow),document.getElementById("modalLinkEl").setAttribute("href",modalLink),document.getElementById("modalImagemEl").setAttribute("src",modalImagem));</script>
 ```
-````
