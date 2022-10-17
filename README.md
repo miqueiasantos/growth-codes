@@ -65,8 +65,8 @@ Insira um campo do tipo HTML no texto e cole o c√≥digo abaixo alterando as vari√
 ```
 <div onclick="javascript:Huggy.startTrigger('{ID_DO_GATILHO}')"
           style="cursor:pointer">
-	<img src="{URL_DA_IMAGEM}"
-     alt="" style = "display: block; margin-left: auto; margin-right: auto; width: 100%;" border="0"/>
+	<img src="{URL_DA_IMAGEM}" alt=""
+    style="display: block; margin-left: auto; margin-right: auto; width: 100%;" border="0"/>
 </div>
 ```
 
