@@ -62,6 +62,8 @@ Basta selecionar a imagem ou texto adicionar um Link e no campo adicionar o cód
 
 Insira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{ID_DO_GATILHO}** e **{URL_DA_IMAGEM}**. _Manter as aspas(") no inicio e final_
 
+![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
+
 ```
 <div onclick="javascript:Huggy.startTrigger('{ID_DO_GATILHO}')"
           style="cursor:pointer">
