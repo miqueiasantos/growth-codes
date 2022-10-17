@@ -51,9 +51,9 @@ Insira um campo do tipo HTML no texto e cole o código abaixo alterando as vari�
 <script>var queryForm=function(e){!(!e||!e.reset)&&e.reset;var t=window.location.toString().split("?"),n=[];if(t.length>1){var o=t[1].split("&");for(i in o){var a=o[i].split("=");n[a[0]]=decodeURIComponent(a[1])}}document.querySelectorAll("input[type=hidden]").forEach((e,t)=>{var o=n[e.name];o&&(document.getElementsByName(e.name)[0].value=o)})};function enviarDados(e){if(e.checkValidity()){var t=new FormData(e);t.get("id_da_campanha")&&t.get("endpoint")&&(t.append("rdtrk",""),$.ajax({type:"POST",url:t.get("endpoint"),data:t,contentType:!1,cache:!1,processData:!1,dataType:"json",success:function(e){document.getElementById("content-material").style.display="none",document.getElementById("content-material-obrigado").style.display="block"},error:function(e){alert("Ops! Ocorreu um erro ao enviar os dados!"),console.error(JSON.stringify(e))}}),document.getElementById("content-material").style.display="none",document.getElementById("content-material-obrigado").style.display="block")}else e.reportValidity()}setTimeout(function(){queryForm()},3e3),id_campanha&&(document.getElementById("id_da_campanha").value=id_campanha),endpoint&&(document.getElementById("endpoint").value=endpoint),tituloBox&&(document.getElementById("tituloBox").innerHTML=tituloBox),descricaoBox&&(document.getElementById("descricaoBox").innerHTML=descricaoBox),url_material&&document.getElementById("bt-material").setAttribute("href",url_material),imagemBox&&(document.getElementById("imagemBox").setAttribute("src",imagemBox),document.getElementById("imagemBox").style.display="block");</script>
 ```
 
-### Gatilho
+### Gatilhos
 
-###### Adicionando um gatilho como link.
+###### Adicionando um gatilho para link.
 
 Basta selecionar a imagem ou texto adicionar um Link e no campo adicionar o código abaixo alterado **{ID_DO_GATILHO}** pelo valor correspondente ao gatilho. _Manter as aspas(") no inicio e final_
 `javascript:Huggy.startTrigger('{ID_DO_GATILHO}');`
