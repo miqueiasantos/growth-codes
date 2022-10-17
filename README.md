@@ -1,4 +1,5 @@
 # Repositório de códigos para o blog
+
 Desenvolvido para auxiliar a integração de formulários, links, banners e outros scripts para o blog.
 
 ## Itens
@@ -9,12 +10,14 @@ Desenvolvido para auxiliar a integração de formulários, links, banners e outr
 - [POPUP Modal](#popup-modal)
 
 ### Materiais Gratuitos
+
 ###### Scrip para definição de campanha para Materiais Educativos Gratuitos
+
 Crie uma nova página e Selecione o template **Material**.
 
 ![Template Material](https://blog.huggy.io/assets/images/template-material.png)
 
-No corpo do texto, inserira um campo do tipo HTML e cole o código abaixo alterando as variáveis **{URL_ENDPOINT}**, **{ID_CAMPANHA}** e  **{URL_PAGINA_OBRIGADO}**. _Manter as aspas(") no inicio e final_
+No corpo do texto, Insira um campo do tipo HTML e cole o código abaixo alterando as variáveis **{URL_ENDPOINT}**, **{ID_CAMPANHA}** e **{URL_PAGINA_OBRIGADO}**. _Manter as aspas(") no inicio e final_
 
 ![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
 
@@ -26,10 +29,11 @@ No corpo do texto, inserira um campo do tipo HTML e cole o código abaixo altera
 </script>
 ```
 
-
 ### Formulário para posts de Materiais Gratuitos
+
 ###### Adicionando formulário em post
-Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{URL_ENDPOINT}**, **{ID_CAMPANHA}**, **{URL_MATERIAL}**, **{TITULO_BOX}**, **{DESCRICAO_box}** e  **{URL_IMAGEM}**. _Manter as aspas(") no inicio e final_
+
+Insira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{URL_ENDPOINT}**, **{ID_CAMPANHA}**, **{URL_MATERIAL}**, **{TITULO_BOX}**, **{DESCRICAO_box}** e **{URL_IMAGEM}**. _Manter as aspas(") no inicio e final_
 
 ![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
 
@@ -48,14 +52,25 @@ Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as var
 ```
 
 ### Gatilho
+
 ###### Adicionando um gatilho como link.
 
 Basta selecionar a imagem ou texto adicionar um Link e no campo adicionar o código abaixo alterado **{ID_DO_GATILHO}** pelo valor correspondente ao gatilho. _Manter as aspas(") no inicio e final_
-```javascript:Huggy.startTrigger('{ID_DO_GATILHO}');```
+`javascript:Huggy.startTrigger('{ID_DO_GATILHO}');`
+
+###### Adicionando um gatilho a imagem.
+
+Insira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{ID_DO_GATILHO}** e **{URL_DA_IMAGEM}**. _Manter as aspas(") no inicio e final_
+
+````<div onclick="javascript:Huggy.startTrigger('{ID_DO_GATILHO}')"
+          style="cursor:pointer">
+	<img src="{URL_DA_IMAGEM}"
+     alt="" style = "display: block; margin-left: auto; margin-right: auto; width: 100%;" border="0"/>
+</div>```
 
 ### POPUP Modal
 ###### Adicionando um popup para exibição
-Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{LINK_BANNER}** e **{URL_BANNER}**. _Manter as aspas(") no inicio e final_
+Insira um campo do tipo HTML no texto e cole o código abaixo alterando as variáveis **{LINK_BANNER}** e **{URL_BANNER}**. _Manter as aspas(") no inicio e final_
 
 ![Campo HTML](https://blog.huggy.io/assets/images/campo-html.png)
 
@@ -69,3 +84,4 @@ Inserira um campo do tipo HTML no texto e cole o código abaixo alterando as var
 <div id="modal-show"> <div> <a href="javascript:;" onclick="document.getElementById('modal-show').style.display='none';" class="close"></a> <a href="" id="modalLinkEl" target="_blank" class="button"></a> <img src="" id="modalImagemEl" alt=""/> </div></div>
 <script>modalShow&&modalImagem&&(setTimeout(function(){document.getElementById("modal-show").style.display="flex"},modalShow),document.getElementById("modalLinkEl").setAttribute("href",modalLink),document.getElementById("modalImagemEl").setAttribute("src",modalImagem));</script>
 ```
+````
